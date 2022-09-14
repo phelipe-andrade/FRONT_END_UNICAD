@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+html,body {
+  box-sizing: border-box;
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'Spectral', georgia;
+  --color-blue: #0BCDD9;
+  --color-grey: #707070;
+  --color-red: #FA3421;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main {
+  min-height: 85vh;
+}
+
+#map {
+  height: 100%;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.title::after {
+  content: ' ';
+  border-bottom: 2px solid var(--color-blue);
+  display: block;
+  width: 15px;
+  margin-top: 2px;
+  transition: 0.2s;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.table li {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.table li span:nth-child(1) {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0 10px 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: var(--color-blue);
 }
 
-.App-link {
-  color: #61dafb;
+.table li span:nth-child(1)::before{
+  content: ' ';
+  border-left: 2px solid #fff;
+  margin-right: 5px;
+  display: block;
+  height: 20px;
+  transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+  display: flex;
+  margin: 10px 0 10px 10px ;
 }
+
+.info::before {
+  content: ' ';
+  border-left: 2px solid #000;
+  margin-right: 5px;
+  display: block;
+  height: 20px;
+}
+
+

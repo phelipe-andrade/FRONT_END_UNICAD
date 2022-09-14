@@ -1,0 +1,45 @@
+.map {
+  margin: 0 auto;
+  height: 80vh;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.travel {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.travel li {
+  margin-right: 10px;
+  background: #eee;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.travel li:hover,
+.travel li:focus,
+.travel li.active{
+  background: var(--color-blue);
+}
+
+.travel img {
+  max-width: 30px;
+}
+
+.travel li:nth-last-child(1){
+  background: none;
+
+}
+
+.travel li:nth-last-child(1) span{
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+

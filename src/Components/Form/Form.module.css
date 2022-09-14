@@ -1,0 +1,27 @@
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cadastro {
+  margin-top: 4rem;
+}
+
+.cadastro p {
+  margin: 2rem 0;
+}
+
+.subtitle {
+  font-family: var(--type-second);
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.subtitle::after {
+  content: '';
+  display: block;
+  background: #ddd;
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+}

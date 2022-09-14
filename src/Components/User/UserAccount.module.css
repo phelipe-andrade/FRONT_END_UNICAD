@@ -1,0 +1,18 @@
+.infoUser {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.infoUser li {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.infoUser span{
+  background: var(--color-blue);
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 0;
+}
